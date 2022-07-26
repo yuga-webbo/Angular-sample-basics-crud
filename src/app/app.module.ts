@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
+import { AddEditBookComponent } from './add-edit-book/add-edit-book.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    BookListComponent
+    BookListComponent,
+    AddEditBookComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +20,7 @@ import {MatTableModule} from '@angular/material/table';
     BrowserAnimationsModule,
     MatButtonModule,
     MatTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
