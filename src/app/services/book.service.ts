@@ -30,6 +30,6 @@ export class BookService {
   }
   deleteBookById(id:any): Observable<any> {
     this.serviceUrl = this.apiURL + "/Book/DeleteBook?id="+id;
-    return this.http.get(this.serviceUrl);
+    return this.http.delete(this.serviceUrl);
   }
 }

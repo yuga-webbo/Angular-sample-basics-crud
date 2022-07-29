@@ -1,1 +1,17 @@
-<p>add-edit-book works!</p>
+
+<div class="popup">
+    Add / Edit Book
+    <form [formGroup]="bookForm" (ngSubmit)="submitData()">
+        <label>Book Name</label>
+        <input type="text" formControlName="bookName">
+        <label>Price</label>
+        <input type="number" formControlName="price">
+        <label>Category</label>
+        <input type="text" formControlName="category">
+        <label>Author</label>
+        <input type="text" formControlName="author">
+        <button type="submit">Submit</button>
+    </form>
+   
+</div>
+
